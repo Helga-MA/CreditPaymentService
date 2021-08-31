@@ -5,7 +5,6 @@ public class CreditPaymentService {
         double i = percent / 100 / 12;
         double payment = amount * (i + i / (Math.pow((1 + i), term) - 1));
         payment = (int) payment;
-        System.out.println("Payment: " + payment);
         return payment;
 
     }
